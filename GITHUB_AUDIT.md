@@ -21,7 +21,7 @@
 ### Immediate Profile Fixes
 ```
 Name: Matthew Scott
-Bio: AI/ML Engineer | Building production ML systems with TensorFlow, NLP, and computer vision | Former Humana Risk Management | Open to senior ML opportunities
+Bio: AI/ML Engineer | Building production ML systems with TensorFlow, NLP, and computer vision | Former Fortune 50 Risk Management | Open to senior ML opportunities
 Company: @Open-to-opportunities
 Website: https://jaspermatters.com
 Location: Louisville, KY

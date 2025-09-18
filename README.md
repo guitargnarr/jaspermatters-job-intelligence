@@ -177,7 +177,7 @@ results = engine.search_jobs(query, top_k=5)
 
 **Matthew Scott** - AI/ML Engineer specializing in production ML systems
 
-Former Risk Management Professional at Humana who transitioned to ML engineering through self-directed learning and building production systems. This project demonstrates real ML engineering capabilities, not just API wrappers.
+Former Risk Management Professional at a Fortune 50 healthcare company who transitioned to ML engineering through self-directed learning and building production systems. This project demonstrates real ML engineering capabilities, not just API wrappers.
 
 - 📧 matthewdscott7@gmail.com
 - 💼 [LinkedIn](https://linkedin.com/in/mscott77)
