@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* jaspermatters minimal tech aesthetic */
+@layer base {
+  body {
+    @apply bg-slate-50 text-jasper-slate font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* Minimal tech card */
+  .tech-card {
+    @apply bg-white rounded-lg p-6 border border-slate-200 hover:border-jasper-electric transition-colors duration-300;
+  }
+
+  /* Code/terminal styling */
+  .code-block {
+    @apply font-mono text-sm bg-jasper-slate text-white p-4 rounded-lg overflow-x-auto;
+  }
+
+  /* Minimal button */
+  .btn-primary {
+    @apply px-6 py-3 bg-jasper-electric text-white rounded-lg font-semibold hover:bg-jasper-electric-light transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-jasper-slate text-jasper-slate rounded-lg font-semibold hover:bg-jasper-slate hover:text-white transition-all duration-300;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-jasper-slate to-jasper-electric bg-clip-text text-transparent;
+  }
+}
