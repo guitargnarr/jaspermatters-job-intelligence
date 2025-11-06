@@ -1,0 +1,19 @@
+[build]
+  # Skip Python dependency installation (not needed for static site)
+  command = "npm run build:css"
+  publish = "."
+
+[build.environment]
+  # Use Node.js 22 (already configured in Netlify)
+  NODE_VERSION = "22"
+
+# Ignore Python files when checking if rebuild is needed
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+# Redirect rules (if needed later)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["spa"]}
