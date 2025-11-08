@@ -1,9 +1,20 @@
+# Jaspermatters - Static Site Configuration
+# This is a static HTML+Tailwind site. No Python dependencies required.
+
 [build]
-  # Build Tailwind CSS only (no Python deps needed)
+  # Build Tailwind CSS from source
   command = "npm run build:css"
   publish = "."
 
+  # Ignore Python files (requirements.txt.bak is for local ML dev, not deployment)
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ."
+
+[build.environment]
+  # No Python runtime needed
+  PYTHON_VERSION = ""
+
 [[redirects]]
+  # SPA-style routing for static site
   from = "/*"
   to = "/index.html"
   status = 200

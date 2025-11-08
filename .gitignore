@@ -79,4 +79,4 @@ htmlcov/
 *.pem
 *.key
 secrets/
-credentials/
+credentials/requirements.txt
