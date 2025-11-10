@@ -9,7 +9,7 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![License](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)](LICENSE)
 
-<img src="https://raw.githubusercontent.com/guitargnar/assets/main/job-intelligence-hero.png" alt="Job Intelligence Platform" width="800"/>
+<img src="https://raw.githubusercontent.com/guitargnarr/assets/main/job-intelligence-hero.png" alt="Job Intelligence Platform" width="800"/>
 
 **Transform job search chaos into data-driven clarity with production ML models**
 
@@ -57,7 +57,7 @@ graph TB
 
 ```bash
 # Clone and setup
-git clone https://github.com/guitargnar/jaspermatters-job-intelligence.git
+git clone https://github.com/guitargnarr/jaspermatters-job-intelligence.git
 cd jaspermatters-job-intelligence
 ./setup.sh
 
@@ -119,7 +119,7 @@ Total params: 79,873
 ## 📊 Real Results
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/guitargnar/assets/main/clustering-viz.png" alt="Job Market Clustering" width="600"/>
+<img src="https://raw.githubusercontent.com/guitargnarr/assets/main/clustering-viz.png" alt="Job Market Clustering" width="600"/>
 </div>
 
 ```python
@@ -210,6 +210,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **If this project helped you, please consider giving it a ⭐**
 
-Made with ❤️ and ☕ by [Matthew Scott](https://github.com/guitargnar)
+Made with ❤️ and ☕ by [Matthew Scott](https://github.com/guitargnarr)
 
 </div>

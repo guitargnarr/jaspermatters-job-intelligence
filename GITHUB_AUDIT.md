@@ -3,7 +3,7 @@
 ## 🔴 Critical Issues to Fix
 
 ### Profile Issues
-1. **Name**: Shows as "guitargnar" instead of "Matthew Scott"
+1. **Name**: Shows as "guitargnarr" instead of "Matthew Scott"
 2. **Bio**: "Thanks, I like to make things" - too casual for $200K roles
 3. **No company**: Missing current status (e.g., "Open to opportunities")
 4. **No website/blog**: jaspermatters.com not linked

@@ -84,4 +84,4 @@ MIT
 
 ---
 
-Built by Matthew Scott | [LinkedIn](https://linkedin.com/in/mscott77) | [GitHub](https://github.com/guitargnar)
+Built by Matthew Scott | [LinkedIn](https://linkedin.com/in/mscott77) | [GitHub](https://github.com/guitargnarr)

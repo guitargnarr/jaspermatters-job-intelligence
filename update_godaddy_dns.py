@@ -72,7 +72,7 @@ class GoDaddyDNSUpdater:
         new_records.append({
             "type": "CNAME",
             "name": "www",
-            "data": "guitargnar.github.io",
+            "data": "guitargnarr.github.io",
             "ttl": 600
         })
         
@@ -140,7 +140,7 @@ def main():
         for ip in GITHUB_IPS:
             print(f"   - @ → {ip}")
         print("\n4. ADD this CNAME:")
-        print("   - www → guitargnar.github.io")
+        print("   - www → guitargnarr.github.io")
         return
     
     # Initialize updater
