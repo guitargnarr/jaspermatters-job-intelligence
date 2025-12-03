@@ -79,9 +79,41 @@
             }
         }
 
-        /* Mobile nav hide - simple fallback */
+        /* Mobile nav */
         @media (max-width: 768px) {
-            nav ul {
+            .desktop-nav {
+                display: none;
+            }
+            .mobile-nav {
+                display: flex;
+            }
+            .mobile-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                padding: 1rem;
+            }
+            .mobile-menu.active {
+                display: block;
+            }
+            .mobile-menu a {
+                display: block;
+                padding: 0.75rem 1rem;
+                color: #1e3a5f;
+                text-decoration: none;
+                border-bottom: 1px solid #eee;
+            }
+            .mobile-menu a:hover {
+                background: #f0f9ff;
+                color: #0891b2;
+            }
+        }
+        @media (min-width: 769px) {
+            .mobile-nav {
                 display: none;
             }
         }
@@ -92,13 +124,26 @@
     <nav class="fixed top-0 w-full bg-white/98 backdrop-blur-lg shadow-md z-50">
         <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-jasper-slate">Matthew Scott</div>
-            <ul class="flex gap-8 list-none">
+            <!-- Desktop Navigation -->
+            <ul class="desktop-nav flex gap-8 list-none">
                 <li><a href="#platform" class="text-jasper-slate hover:text-jasper-electric transition-colors font-medium">Platform Demo</a></li>
                 <li><a href="#projects" class="text-jasper-slate hover:text-jasper-electric transition-colors font-medium">Projects</a></li>
                 <li><a href="/resume.html" class="text-jasper-slate hover:text-jasper-electric transition-colors font-medium">Resume</a></li>
                 <li><a href="https://github.com/guitargnarr" target="_blank" class="text-jasper-slate hover:text-jasper-electric transition-colors font-medium">GitHub</a></li>
                 <li><a href="#contact" class="text-jasper-slate hover:text-jasper-electric transition-colors font-medium">Contact</a></li>
             </ul>
+            <!-- Mobile Hamburger -->
+            <button class="mobile-nav text-jasper-slate text-2xl" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span id="menu-icon">&#9776;</span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#platform" onclick="toggleMobileMenu()">Platform Demo</a>
+            <a href="#projects" onclick="toggleMobileMenu()">Projects</a>
+            <a href="/resume.html">Resume</a>
+            <a href="https://github.com/guitargnarr" target="_blank">GitHub</a>
+            <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
         </div>
     </nav>
 
@@ -562,6 +607,14 @@ Use your expertise to determine:
     </section>
 
     <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('active');
+            icon.innerHTML = menu.classList.contains('active') ? '&#10005;' : '&#9776;';
+        }
+
         // Terminal interaction
         const input = document.getElementById('demo-input');
         const output = document.getElementById('terminal-output');

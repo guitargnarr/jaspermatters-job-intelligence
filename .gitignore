@@ -80,3 +80,4 @@ htmlcov/
 *.key
 secrets/
 credentials/requirements.txt
+.vercel
